@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Design.com - Tienda</title>
+    
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="estilos.css">
+    
+    <!-- Inicializar Tooltips -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+            tooltipTriggerList.forEach(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+        });
+    </script>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Design.com</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="tienda.html">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container my-5">
+        <h1 class="text-center mb-5">Nuestros Productos</h1>
+
+        <!-- Tabs para categorías -->
+        <ul class="nav nav-pills justify-content-center mb-4" id="categoriasTabs">
+            <li class="nav-item">
+                <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#tecnologia">Tecnología</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#ropa">Ropa</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#novedades">Novedades</button>
+            </li>
+        </ul>
+
+        <!-- Contenido de los tabs -->
+        <div class="tab-content">
+            <!-- Categoría Tecnología (activa por defecto) -->
+            <div class="tab-pane fade show active" id="tecnologia">
+                <h4 class="mb-4">Categoría Tecnología</h4>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+
+<grok-card data-id="ea97c1" data-type="image_card"></grok-card>
+
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Laptop HP</h5>
+                                <p class="card-text">Máximo rendimiento para desarrolladores.</p>
+                                <button class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver características técnicas detalladas">
+                                    Ver Especificaciones
+                                </button>
+                            </div>
+                            <div class="card-footer bg-transparent text-muted small">
+                                16GB RAM, 512GB SSD, Procesador i7.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+
+<grok-card data-id="b3db64" data-type="image_card"></grok-card>
+
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Laptop ACER</h5>
+                                <p class="card-text">Máximo rendimiento para desarrolladores.</p>
+                                <button class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver características técnicas detalladas">
+                                    Ver Especificaciones
+                                </button>
+                            </div>
+                            <div class="card-footer bg-transparent text-muted small">
+                                16GB RAM, 512GB SSD, Procesador i7.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+
+<grok-card data-id="d04f90" data-type="image_card"></grok-card>
+
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Laptop APPLE</h5>
+                                <p class="card-text">Máximo rendimiento para desarrolladores.</p>
+                                <button class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver características técnicas detalladas">
+                                    Ver Especificaciones
+                                </button>
+                            </div>
+                            <div class="card-footer bg-transparent text-muted small">
+                                16GB RAM, 512GB SSD, Procesador M2.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoría Ropa -->
+            <div class="tab-pane fade" id="ropa">
+                <h4 class="mb-4">Categoría Ropa</h4>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 shadow-sm position-relative">
+
+<grok-card data-id="dbcc94" data-type="image_card"></grok-card>
+
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                Oferta -20%
+                            </span>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Camiseta de hombre</h5>
+                                <p class="card-text">Algodón 100% con un diseño minimalista.</p>
+                                <button class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver todas las tallas disponibles">
+                                    Ver tallas
+                                </button>
+                                <button class="btn btn-outline-secondary ms-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Envío gratis en compras +$50">
+                                    <i class="bi bi-truck"></i> Envío?
+                                </button>
+                            </div>
+                            <div class="card-footer bg-transparent text-muted small">
+                                Disponible en tallas S, M, L, XL.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm position-relative">
+
+<grok-card data-id="d43ad0" data-type="image_card"></grok-card>
+
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                Oferta -18%
+                            </span>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Camiseta de mujer</h5>
+                                <p class="card-text">Algodón 100% con un diseño minimalista.</p>
+                                <button class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver todas las tallas disponibles">
+                                    Ver tallas
+                                </button>
+                            </div>
+                            <div class="card-footer bg-transparent text-muted small">
+                                Disponible en tallas S, M, L, XL.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm position-relative">
+
+<grok-card data-id="e11604" data-type="image_card"></grok-card>
+
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                Oferta -10%
+                            </span>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Camiseta de niño</h5>
+                                <p class="card-text">Algodón 100% con un diseño minimalista.</p>
+                                <button class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver todas las tallas disponibles">
+                                    Ver tallas
+                                </button>
+                            </div>
+                            <div class="card-footer bg-transparent text-muted small">
+                                Disponible en tallas 4-14 años.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoría Novedades -->
+            <div class="tab-pane fade" id="novedades">
+                <h4 class="mb-4">Categoría Novedades</h4>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 shadow-sm position-relative">
+
+<grok-card data-id="0e416b" data-type="image_card"></grok-card>
+
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                                ¡Nuevo!
+                            </span>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Gadget 2025</h5>
+                                <p class="card-text">Innovación tecnológica de última generación.</p>
+                                <button class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver características técnicas detalladas">
+                                    Ver Especificaciones
+                                </button>
+                            </div>
+                            <div class="card-footer bg-transparent text-muted small">
+                                Lanzamiento exclusivo 2025.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Puedes agregar más cards aquí -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p>Curso de Diseño y Desarrollo Web | Evaluación Integral Isi © 2025-II</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

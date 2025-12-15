@@ -1,75 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INICIO | Condor Xtreme</title>
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="shortcut icon" href="img/condor.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Tagesschrift&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PerfumesLujo.com - Inicio</title>
+    
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <div id="contenedor">
-        <header>
-            <a href="https://www.condorxtreme.com/">
-                <img src="img/logo.png" alt="logo">
-            </a>
-            <nav>
-                <ul id="menu">
-                    <li><a href="index.html">INICIO</a></li>
-                    <li><a href="destino.html">DESTINOS</a></li>
-                    <li><a href="contactos.html">CONTACTOS</a></li>
-                    <li><a href="video.html">VIDEOS</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">PerfumesLujo.com</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
                 </ul>
-            </nav>
-        </header>
-        <h5><i class="fa-solid fa-house"></i> Inicio</h5>        
-        <main>
-            <section>                
-                <article>
-                    <h2>¿Porque Elegirnos?</h2>
-                   <img src="img/nosotros.png" alt="nosotros">
-                    
-                </article>
-                <article>
-                    <h2>La mejor experiencia de tu vida</h2>
-                    <img src="img/parapente.webp" alt="parapente">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati vel error pariatur aspernatur fugiat.</p>
-                </article>
-            </section>
-            <aside>
-                <div>
-                    <h3>Promociones</h3>
-                    <img src="img/formulario.png" alt="formulario">
-                    <img src="img/promo1.png" alt="promo1">
-                    <img src="img/promo2.png" alt="promo2">
-                    <img src="img/promo3.png" alt="promo3">
-                </div>
-            </aside>
-        </main>
-        <footer>
-            <h4>© Condor Xtreme 2024 Todos los derechos reservados</h4>
-            <div>
-                <address>
-                    <ul>
-                        <li>Explanada Costa Verde del Distrito de Magdalena del Mar</li>
-                        <li>+51 947392102</li>
-                        <li>contact@condorxtreme.com</li>
-                    </ul>
-                </address>
-                <nav>
-                    <p>Redes Sociales: </p>
-                    <ul id="redes">
-                        <li><a href="https://web.facebook.com/condorXtreme?_rdc=1&_rdr#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="https://www.instagram.com/condor_xtreme"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="https://api.whatsapp.com/send/?phone=51947392102&text=Deseo+realizar+un+consulta+personalizada+sobre...+&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp"></i></a></li>
-                        <li><a href="https://www.youtube.com/condorxtremeperu"><i class="fa-brands fa-youtube"></i></a></li>
-                    </ul>
-                </nav>
             </div>
-        </footer>
+        </div>
+    </nav>
+
+    <!-- Carrusel -->
+    <div id="carouselPrincipal" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/per1.webp" class="d-block w-100 carousel-img" alt="Perfume exclusivo">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Web Demo</h5>
+                    <p>Integrando todos los componentes de Bootstrap 5.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/per2.jpg" class="d-block w-100 carousel-img" alt="Fragancia de lujo">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Elegancia Eternal</h5>
+                    <p>Descubre nuestras esencias premium.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/per3.jpg" class="d-block w-100 carousel-img" alt="Aroma sofisticado">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Exclusividad en Cada Nota</h5>
+                    <p>Perfumes artesanales de alta gama.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
     </div>
+
+    <!-- Sección Sistema de Grilla -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Sistema de Grilla</h2>
+        <p class="text-center text-muted mb-5">Ejemplo de distribución de columnas responsive.</p>
+        
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="p-4 bg-light rounded shadow-sm">
+                    <i class="bi bi-grid-3x3-gap-fill display-4 text-primary mb-3"></i>
+                    <h4>Columna 1</h4>
+                    <p class="text-muted">Ocupa 12 en móvil, 6 en tablet, 4 en escritorio.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="p-4 bg-light rounded shadow-sm">
+                    <i class="bi bi-layout-three-columns display-4 text-success mb-3"></i>
+                    <h4>Columna 2</h4>
+                    <p class="text-muted">Ocupa 12 en móvil, 6 en tablet, 4 en escritorio.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="p-4 bg-light rounded shadow-sm">
+                    <i class="bi bi-phone display-4 text-danger mb-3"></i>
+                    <h4>Columna 3</h4>
+                    <p class="text-muted">Ocupa 12 en móvil, 6 en tablet, 4 en escritorio.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p>Curso de Diseño y Desarrollo Web | Evaluación Integral Isi © 2025-II</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
