@@ -58,3 +58,30 @@ h2, h4 {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
     transition: box-shadow 0.3s ease;
 }
+
+/* Ajustes personalizados */
+.carousel-img {
+    height: 400px !important;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.carousel-item img {
+    filter: brightness(70%);
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.shadow-sm:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    transition: box-shadow 0.3s ease;
+}
